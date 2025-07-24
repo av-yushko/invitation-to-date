@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Запрошення 💌</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #ffe6e6, #fff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 600px;
+      padding: 30px;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+      animation: pulse 2s infinite;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .icon:hover {
+      transform: scale(1.2);
+    }
+
+    h1 {
+      color: #d6336c;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #333;
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    .hint {
+      margin-top: 15px;
+      font-size: 0.75em;
+      color: #aaa;
+      font-style: italic;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+    }
+
+    /* Адаптація для телефонів */
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px;
+      }
+
+      .icon {
+        width: 50px;
+        height: 50px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Аудіо -->
+  <audio id="bg-music" autoplay loop>
+    <source src="tvoya.mp3" type="audio/mpeg">
+    Ваш браузер не підтримує відтворення аудіо.
+  </audio>
+
+  <div class="card">
+    <!-- Клікабельна іконка -->
+    <svg class="icon" onclick="document.getElementById('bg-music').play()" viewBox="0 0 24 24" fill="#d6336c" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+        2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 
+        4.5 2.09C13.09 3.81 14.76 3 16.5 3 
+        19.58 3 22 5.42 22 8.5c0 3.78-3.4 
+        6.86-8.55 11.54L12 21.35z"/>
+    </svg>
+
+    <h1>6 чарівних місяців разом</h1>
+    <p>Дорога моя Наталочка ❤️</p>
+    <p>Хочу запросити тебе на святкування нашої особливої дати.</p>
+    <p><strong>📍 Ресторан: Friday</strong><br>📅 <strong>29 липня 2025 року</strong><br>🕗 <strong>20:00</strong></p>
+    <p>Нехай цей вечір буде таким же чудовим, як і наші перші 6 місяців 💫</p>
+    <div class="footer">З любов’ю, твій коханий Андрійко 😘</div>
+    <div class="hint">🔈 Натисни на сердечко, якщо музика не лунає</div>
+  </div>
+
+</body>
+</html>
